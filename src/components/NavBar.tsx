@@ -1,17 +1,26 @@
-import { Box } from '@chakra-ui/react'
+import { Flex, Link } from "@chakra-ui/react";
 
 const NavBar = () => {
   return (
-    <Box
-    display={'flex'}
-    width={'79%'}
-    backgroundColor={'#696969'}
-    color={'white'}
-    justifyContent={'center'}
+    <Flex
+      bg="#3d3d3d"
+      fontSize={"xl"}
+      color="white"
+      height="80px"
+      display="flex"
+      justifyContent="center"
+      gap={10}
+      fontWeight="bold"
+      align="center"
+      justify="space-between"
+      direction={{ base: "column", md: "row" }}
     >
-      <h1>NavBar</h1>
-    </Box>
-  )
-}
+      <Link href="/">Home</Link>
+      <Link href="/sobre">Sobre Mim</Link>
+      <Link href="/projetos">Projetos</Link>
+      <Link href="contato/">Contato</Link>
+    </Flex>
+  );
+};
 
-export default NavBar
+export default NavBar;

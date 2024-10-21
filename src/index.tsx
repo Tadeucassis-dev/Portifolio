@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <ChakraProvider>
     <Box
-      bgImage="/fundo3.jpg"
+      bgColor={"gray.900"}
       bgSize="cover"
       bgPosition="center"
       bgRepeat="no-repeat"

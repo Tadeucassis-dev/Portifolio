@@ -1,24 +1,57 @@
-import { Flex, Link } from "@chakra-ui/react";
+import { Box, Flex, Icon, Link } from "@chakra-ui/react";
+import { FaListUl } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <Flex
-      bg="#3d3d3d"
-      fontSize={"xl"}
-      color="white"
-      height="80px"
-      display="flex"
-      justifyContent="center"
-      gap={10}
-      fontWeight="bold"
-      align="center"
-      justify="space-between"
-      direction={{ base: "column", md: "row" }}
-    >
-      <Link href="/">Home</Link>
-      <Link href="/sobre">Sobre Mim</Link>
-      <Link href="/projetos">Projetos</Link>
-      <Link href="contato/">Contato</Link>
+    <Flex justify={"space-between"} display={"flex"} padding={"20px"}>
+      <Box>
+        <Icon as={FaListUl} w={9} h={9} color={"white"} />
+      </Box>
+      <Box
+        fontSize={"2xl"}
+        color="white"
+        height="80px"
+        display="flex"
+        justifyContent="right"
+        pr={5}
+        pt={5}
+        gap={8}
+        fontWeight="bold"
+        fontFamily={"sans-serif"}
+      >
+        <Link
+          href="/"
+          sx={{
+            _hover: { transform: "scale(1.2)", transition: "transform 0.2s" },
+          }}
+        >
+          Home
+        </Link>
+        <Link
+          href="/sobre"
+          sx={{
+            _hover: { transform: "scale(1.2)", transition: "transform 0.2s" },
+          }}
+        >
+          Sobre{" "}
+        </Link>
+        <Link
+          href="/projetos"
+          sx={{
+            _hover: { transform: "scale(1.2)", transition: "transform 0.2s" },
+          }}
+        >
+          Projetos
+        </Link>
+        <Link
+          href="contato/"
+          sx={{
+            _hover: { transform: "scale(1.2)", transition: "transform 0.2s" },
+          }}
+        >
+          Contato
+        </Link>
+      </Box>
     </Flex>
   );
 };

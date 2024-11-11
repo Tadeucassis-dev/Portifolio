@@ -1,12 +1,12 @@
-import { Box, Flex, Icon, Link } from "@chakra-ui/react";
-import { FaListUl } from "react-icons/fa";
+import { Box, Flex, Link } from "@chakra-ui/react";
 
 const NavBar = () => {
   return (
-    <Flex justify={"space-between"} display={"flex"} padding={"20px"}>
-      <Box>
-        <Icon as={FaListUl} w={9} h={9} color={"white"} />
-      </Box>
+    <Flex
+      justify={"end"}
+      display={"flex"}
+      padding={"20px"}
+    >
       <Box
         fontSize={"2xl"}
         color="white"
@@ -19,14 +19,14 @@ const NavBar = () => {
         fontWeight="bold"
         fontFamily={"sans-serif"}
       >
-        <Link
+         <Link
           href="/"
           sx={{
             _hover: { transform: "scale(1.2)", transition: "transform 0.2s" },
           }}
         >
           Home
-        </Link>
+        </Link> 
         <Link
           href="/sobre"
           sx={{

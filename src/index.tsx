@@ -8,12 +8,15 @@ const root = ReactDOM.createRoot(
 root.render(
   <ChakraProvider>
     <Box
-      bgColor={"gray.900"}
+      bgImage="url(/background.jpg)"
       bgSize="cover"
       bgPosition="center"
       bgRepeat="no-repeat"
       bgAttachment="fixed"
       height={"100vh"}
+      width={"100%"}
+      overflow={"hidden"}
+      
     >
       <Rotas />
     </Box>

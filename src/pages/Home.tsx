@@ -6,16 +6,17 @@ export default function Home() {
       <Flex
         align="center"
         justify="space-between"
-        p={{ base: 5, md: 10 }} // Padding adaptável
+        p={{ base: 5, md: 10 }} 
         color="white"
         height="80vh"
-        flexDirection={{ base: 'column', md: 'row' }} // Flex direction responsivo
+        flexDirection={{ base: 'column', md: 'row' }} 
         textAlign={{ base: 'center', md: 'left' }}
+        
       >
         <Box flex="1" display="flex" justifyContent="center" mb={{ base: 4, md: 0 }}>
           <Image
             borderRadius="full"
-            boxSize={{ base: "100px", md: "150px" }} // Tamanho da imagem adaptável
+            boxSize={{ base: "100px", md: "150px" }} 
             src="/tadeu.jpeg"
             alt="Foto"
             objectFit="cover"

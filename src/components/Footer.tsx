@@ -3,7 +3,7 @@ import { FaInstagram, FaWhatsapp, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <Center p={5} bg="#4c4c4c" textAlign="center" color="white">
+    <Center p={5} bg="#000033" textAlign="center" color="white">
       <Flex justify="space-between" align="center" maxW="1200px" mx="auto">
         <Text ml={"200px"} fontSize={20}>
           © 2024 Tadeu César. Todos os direitos reservados.

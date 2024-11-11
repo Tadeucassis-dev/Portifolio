@@ -9,16 +9,19 @@ export default function Contato() {
       display={"flex"}
       justifyContent={"center"}
       alignItems={"center"}
+      flexDirection={"column"}
     >
       <Flex
         width={"80%"}
         maxW={"1200px"}
-        justifyContent={"space-between"} // Espaço entre as colunas
+        display={"flex"}
+        gap={10}
+        height={"100%"}
         alignItems={"center"}
         flexDirection={{ base: "column", md: "row" }} // Coluna em telas menores, linha em maiores
       >
         {/* Informações de contato */}
-        <Box textAlign={{ base: "center", md: "left" }} flex="1">
+        <Box textAlign={{ base: "center", md: "left" }} flex="1" >
           <Heading size="lg" color={"#fff"}>
             Contato
           </Heading>

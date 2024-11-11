@@ -9,6 +9,7 @@ export default function Sobre() {
         flexDirection={"column"}
         justifyContent={"center"}
         alignItems={"center"}
+       
       >
         <Heading fontSize={'4xl'} color={'#fff'}>Sobre Mim</Heading>
         <Text mt={3} color={'#fff'} textAlign="center" maxW="600px" fontSize={'lg'}>
